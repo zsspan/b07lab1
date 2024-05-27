@@ -14,6 +14,10 @@ public class Polynomial {
     }
 
     public Polynomial(double[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length){
+            coeff = new double[] { 0 };
+            exp = new int[] { 0 };
+        }
         coeff = arr1;
         exp = arr2;
     }
